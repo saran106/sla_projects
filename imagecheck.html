@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vijay</title>
+    <link rel="stylesheet" href="imagecheck.css">
+</head>
+
+<body >
+    <img src="download (1).jpeg" alt="World Map" class="vijay"usemap="#worldmap">
+    <map name="worldmap">
+        <area shape="rect" 
+        coords="100,21,13,63"
+        alt="North America" 
+        target="_blank"
+        href="https://www.bing.com/search?q=vijay+(actor)&filters=dtbk:%22MCFvdmVydmlldyFvdmVydmlldyE0ZDc0NjM2Ni1iMDIyLTcwZmMtNjRmMi04YjUwNTE0ODgzMWI%3d%22+sid:%224d746366-b022-70fc-64f2-8b505148831b%22+tphint:%22f%22&FORM=DEPNAV">
+        <!-- area and mapping concept -->
+
+    </map>
+    <button onclick=" hidevijay()">hide</button><br>
+    <button onclick=" showvijay()">show</button>
+    <script>
+        function hidevijay() {
+            
+            const clouds = document.querySelectorAll('.vijay');
+          
+            clouds.forEach(cloud => {
+                cloud.style.display = 'none';
+            });
+        }
+        function showvijay() {
+            
+            const clouds = document.querySelectorAll('.vijay');
+          
+            clouds.forEach(cloud => {
+                cloud.style.display = 'block';
+            });
+        }
+    </script>
+</body>
+
+</html>
