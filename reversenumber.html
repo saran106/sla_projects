@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input  id="matta" type="number" value=""/>
+    <button onclick="reversenum()" >press here!</button>
+
+    <script>
+        function reversenum(){
+            let num=document.getElementById('matta').value
+            let arrange='';
+            for(let i=num.length-1;i>=0;i--){
+                arrange+=num[i]
+            }
+            console.log(parseInt(arrange))
+        }
+    </script>
+</body>
+</html>
